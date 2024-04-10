@@ -1,0 +1,117 @@
+/* styles/index.css */
+
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background-image: url("assets/img/bg.jpg");
+  background-size: cover; /* Ensures the background image covers the entire body */
+  background-position: center; /* Centers the background image */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Fallback color in case the image doesn't load */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container styles */
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center form items horizontally */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input field styles */
+label,
+input,
+button,
+p {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* Style the submit button */
+button {
+  padding: 10px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 50%; /* Adjust the width as desired */
+  max-width: 200px; /* Set a maximum width if needed */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+a {
+  text-decoration: none;
+  color: #4caf50;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Example styling for the role selection dropdown */
+.role-select {
+  margin-bottom: 20px;
+}
+
+.role-select .role-label {
+  display: block;
+  font-weight: bold;
+  font-size: 18px; /* Increased font size */
+  margin-bottom: 5px;
+}
+
+.role-select select {
+  width: 100%;
+  padding: 12px; /* Increased padding */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  height: 40px; /* Increased height */
+}
+
+/* Style for the dropdown when focused */
+.role-select select:focus {
+  border-color: #5b9dd9;
+}
+
+/* CSS code for error messages */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
